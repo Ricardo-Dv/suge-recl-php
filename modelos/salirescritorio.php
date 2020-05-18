@@ -5,5 +5,5 @@
 
   session_destroy();
 
-  header('Location: /suge_recl_metro/vistas/ingresar.php');
+  header('Location: ../vistas/ingresar.php');
 ?>
