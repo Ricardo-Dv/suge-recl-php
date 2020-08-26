@@ -13,9 +13,13 @@
                             class="form-control" placeholder="Actualiza el Aspecto">
                     </div>
 
-                    <button class= "btn btn-primary btn-block" type="submit" name="actualizar">  
+                    <button class= "btn btn-primary ml-5" type="submit" name="actualizar">  
                         Actualizar 
                     </button>
+
+                    <a class="btn btn-primary ml-5" href="aspectos.php"> 
+                      Volver
+                    </a>
 
                 </form>
             

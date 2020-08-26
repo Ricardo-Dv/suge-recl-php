@@ -2,6 +2,7 @@
 <?php include("../includes/menulateral.php"); ?>
 <?php include("../database/conexion.php"); ?>
 
+<div class="d-inline-block align-top p-3">
 <div class="container p-3">
     <div class="row">
         <div class="col-md-7">
@@ -36,7 +37,7 @@
                         <td> </td>
                         <td class="align-middle"><?php echo $fila['idCargo']?></td>
                         <td class="align-middle"><?php echo $fila['descripCargo']?></td>
-                        <td>
+                        <td class="align-middle text-right pr-0">
                              <a class= "btn btn-light" href="editarcargos.php?id=<?php echo $fila['idCargo']?>">
                              <i class="fas fa-marker"></i>
                              </a>
@@ -51,7 +52,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
 
 

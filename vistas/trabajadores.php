@@ -2,8 +2,7 @@
 <?php include("../includes/menulateral.php"); ?>
 <?php include("../database/conexion.php"); ?>
 
-
-
+<div class="d-inline-block align-top p-3">
 <div class="container p-3">
     <div class="row">
         <div class="col-md-7">
@@ -55,11 +54,11 @@
                         <td class="align-middle"><?php echo $fila['correoTrab']?></td>
                         <td class="align-middle"><?php echo $fila['sexoTrab']?></td>
                         <td class="align-middle"><?php echo $fila['nacionalidadTrab']?></td>
-                        <td>
+                        <td  class="pr-0">
                              <a class= "btn btn-light" href="editartrab.php?id=<?php echo $fila['trabajadorId']?>">
                              <i class="fas fa-marker"></i>
                              </a>
-                             <a class="btn btn-danger" href="../modelos/eliminartrab.php?id=<?php echo $fila['trabajadorId']?> ">
+                             <a class="btn btn-danger" onclick="return confirmarElim()" href="../modelos/eliminartrab.php?id=<?php echo $fila['trabajadorId']?> ">
                              <i class="fas fa-trash-alt"></i>
                              </a>
                         </td>
@@ -72,7 +71,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
 
 

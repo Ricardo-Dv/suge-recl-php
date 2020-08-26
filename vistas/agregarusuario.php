@@ -43,9 +43,13 @@
           </div>
 
           <div class="form-group"> 
-            <button class= "btn btn-primary btn-block" type="submit" name="guardarusuario">
+            <button class= "btn btn-primary ml-5" type="submit" name="guardarusuario">
               Agregar
             </button>
+
+            <a class="btn btn-primary ml-5" href="usuariosmetro.php"> 
+              Volver
+            </a>
           </div>
 
         </form>

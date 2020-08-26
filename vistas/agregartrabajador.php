@@ -19,6 +19,7 @@
           <div class="form-group">     
             <input class="form-control" name="cedula" type="text" placeholder="Cédula">
           </div>
+          
 
           <div class="form-group"> 
            <input class="form-control" name="nombre" type="text" placeholder="Nombre">
@@ -28,38 +29,45 @@
             <input class="form-control" name="apellido" type="text" placeholder="Apellido">
           </div>
 
-          <div class="form-group"> 
-          <select class="form-control" name="cargo">
-          <?php          
-          $query = "SELECT * FROM tipos_cargos";
-          $result_cargos = mysqli_query($conn, $query);   
-          while($fila = mysqli_fetch_array($result_cargos)) { ?>
+         <div class="form-row">
+           <div class="form-group col-md-10"> 
+           <select class="form-control" name="cargo">
+           <?php          
+            $query = "SELECT * FROM tipos_cargos";
+           $result_cargos = mysqli_query($conn, $query);   
+           while($fila = mysqli_fetch_array($result_cargos)) { ?>
 
-            <option value=" <?php echo $fila['idCargo']; ?> "> <?php echo $fila['descripCargo']; ?> </option>
-          <?php } ?>
+              <option value=" <?php echo $fila['idCargo']; ?> "> <?php echo $fila['descripCargo']; ?> </option>
+           <?php } ?>
 
-          </select>
-           <a class="btn btn-info float-right" href="agregarcargos_trab.php">
-              <i class="fas fa-plus"></i>
-           <a>
+           </select>
+           </div>
+           <div class="form-group col-md-2">
+             <a class="btn btn-info" href="agregarcargos_trab.php">
+               <i class="fas fa-plus"></i>
+             </a>
+            </div>
           </div>
 
-          <div class="form-group"> 
-          <select class="form-control" name="dpto">
-          
-          <?php          
-          $query = "SELECT * FROM tipos_dpto";
-          $result_dpto = mysqli_query($conn, $query);   
-          while($fila = mysqli_fetch_array($result_dpto)) { ?>
+          <div class="form-row"> 
+          <div class="form-group col-md-10">
+            <select class="form-control" name="dpto">
+            <?php          
+            $query = "SELECT * FROM tipos_dpto";
+            $result_dpto = mysqli_query($conn, $query);   
+            while($fila = mysqli_fetch_array($result_dpto)) { ?>
 
             <option value=" <?php echo $fila['idDpto']; ?> "> <?php echo $fila['descripDpto']; ?> </option>
-          <?php } ?>
+            <?php } ?>
             
           </select>
-          <a class="btn btn-info float-right" href="agregardptos_trab.php">
-              <i class="fas fa-plus"></i>
-           <a>
           </div>
+          <div class="form-group col-md-2">
+             <a class="btn btn-info" href="agregardptos_trab.php">
+              <i class="fas fa-plus"></i>
+             </a>
+          </div>
+        </div>
 
           <div class="form-group"> 
            <input class="form-control" name="tlfn" type="text" placeholder="Teléfono">
@@ -82,10 +90,15 @@
           </div>
 
           <div class="form-group"> 
-            <button class= "btn btn-primary btn-block" type="submit" name="guardartrabajador">
+            <button class= "btn btn-primary ml-5" type="submit" name="guardartrabajador">
               Agregar
             </button>
+
+            <a class="btn btn-primary ml-5" href="trabajadores.php"> 
+              Volver
+            </a>
           </div>
+          
 
         </form>
        </div> 

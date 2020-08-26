@@ -11,13 +11,17 @@
         <form action="../modelos/guardarcargos_trab.php" method="POST">
 
           <div class="form-group">     
-            <input class="form-control" name="descripCargo" type="text" placeholder="Descripción">
+            <input class="form-control" name="descripCargo" type="text" placeholder="Cargo">
           </div>
 
           <div class="form-group"> 
-            <button class= "btn btn-primary btn-block" type="submit" name="guardarcargos">
+            <button class= "btn btn-primary ml-5" type="submit" name="guardarcargos">
               Agregar
             </button>
+
+            <a class="btn btn-primary ml-5" href="agregartrabajador.php"> 
+              Volver
+            </a>
           </div>
 
         </form>

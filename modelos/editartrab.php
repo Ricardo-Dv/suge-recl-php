@@ -11,6 +11,8 @@ if (isset($_GET['id'])) {
         $cedula = $fila['cedPasTrab'];
         $nombre = $fila['nombTrab'];
         $apellido = $fila['apellTrab'];
+        $cargo = $fila['idCargo'];
+        $dpto = $fila['idDpto'];
         $tlfn = $fila['tlfnTrab'];
         $fechaNac = $fila['fechaNacTrab'];
         $correo = $fila['correoTrab'];

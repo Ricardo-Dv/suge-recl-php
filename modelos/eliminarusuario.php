@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
     $query = "DELETE FROM usuario WHERE usuarioId = $id";
     $result = mysqli_query($conn, $query);
     if (!$result) {
-        die("Query fallido");
+        die("Error: el usuario se encuentra registrado en un informe.");
     }
 
     $_SESSION['mensaje'] = "Usuario eliminado satisfactoriamente";

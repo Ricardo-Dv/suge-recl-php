@@ -13,9 +13,13 @@
                             class="form-control" placeholder="Actualiza el Motivo">
                     </div>
 
-                    <button class= "btn btn-primary btn-block" type="submit" name="actualizar">  
+                    <button class= "btn btn-primary ml-5" type="submit" name="actualizar">  
                         Actualizar 
                     </button>
+
+                    <a class="btn btn-primary ml-5" href="motivos.php"> 
+                      Volver
+                    </a>
 
                 </form>
             

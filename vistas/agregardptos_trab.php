@@ -11,13 +11,17 @@
         <form action="../modelos/guardardptos_trab.php" method="POST">
 
           <div class="form-group">     
-            <input class="form-control" name="descripDpto" type="text" placeholder="Descripción">
+            <input class="form-control" name="descripDpto" type="text" placeholder="Departamento">
           </div>
 
           <div class="form-group"> 
-            <button class= "btn btn-primary btn-block" type="submit" name="guardarDpto">
+            <button class= "btn btn-primary ml-5" type="submit" name="guardarDpto">
               Agregar
             </button>
+
+            <a class="btn btn-primary ml-5" href="agregartrabajador.php"> 
+              Volver
+            </a>
           </div>
 
         </form>

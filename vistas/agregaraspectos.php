@@ -15,9 +15,13 @@
           </div>
 
           <div class="form-group"> 
-            <button class= "btn btn-primary btn-block" type="submit" name="guardarAspec">
+            <button class= "btn btn-primary ml-5" type="submit" name="guardarAspec">
               Agregar
             </button>
+
+            <a class="btn btn-primary ml-5" href="aspectos.php"> 
+              Volver
+            </a>
           </div>
 
         </form>

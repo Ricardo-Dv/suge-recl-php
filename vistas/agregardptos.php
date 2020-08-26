@@ -15,9 +15,13 @@
           </div>
 
           <div class="form-group"> 
-            <button class= "btn btn-primary btn-block" type="submit" name="guardarDpto">
+            <button class= "btn btn-primary ml-5" type="submit" name="guardarDpto">
               Agregar
             </button>
+
+            <a class="btn btn-primary ml-5" href="dptos.php"> 
+              Volver
+            </a>
           </div>
 
         </form>

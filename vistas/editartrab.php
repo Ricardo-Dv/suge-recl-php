@@ -30,8 +30,14 @@
                          $query = "SELECT * FROM tipos_cargos";
                          $result_cargos = mysqli_query($conn, $query);   
                          while($fila = mysqli_fetch_array($result_cargos)) { ?>
+                        
+                        <?php $selected = ''; 
+                                if ($cargo == $fila['idCargo']){
+                                    $selected = 'selected' ;
+                                }
+                        ?>
 
-                         <option value=" <?php echo $fila['idCargo']; ?> "> <?php echo $fila['descripCargo']; ?> </option>
+                         <option <?php echo $selected ;?> value=" <?php echo $fila['idCargo']; ?> "> <?php echo $fila['descripCargo']; ?> </option>
                          <?php } ?>
 
                          </select>
@@ -45,7 +51,13 @@
                          $result_dpto = mysqli_query($conn, $query);   
                          while($fila = mysqli_fetch_array($result_dpto)) { ?>
 
-                         <option value=" <?php echo $fila['idDpto']; ?> "> <?php echo $fila['descripDpto']; ?> </option>
+                         <?php $selected = '';
+                                if ($dpto == $fila['idDpto']){
+                                    $selected = 'selected' ;
+                                }
+                        ?>
+
+                         <option <?php echo $selected; ?> value=" <?php echo $fila['idDpto']; ?> "> <?php echo $fila['descripDpto']; ?> </option>
                          <?php } ?>
 
                          </select>
@@ -76,9 +88,13 @@
                          class="form-control" placeholder="Actualiza la Nacionalidad">
                      </div>
 
-                     <button class= "btn btn-primary btn-block" type="submit" name="actualizar">  
+                     <button class= "btn btn-primary ml-5" type="submit" name="actualizar">  
                         Actualizar 
                      </button>
+
+                     <a class="btn btn-primary ml-5" href="trabajadores.php"> 
+                         Volver
+                     </a>
 
                 </form>
             

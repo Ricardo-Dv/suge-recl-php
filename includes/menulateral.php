@@ -1,6 +1,9 @@
 <!-- menú lateral -->
-<div class="list-group float-left pt-3  font-weight-bold">
-            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Informes</a>
+
+
+<div class="d-inline-block mt-3 mr-5 mb-5 font-weight-bold"  id="menulateral">
+
+            <a href="../vistas/informes.php" class="list-group-item list-group-item-action">Informes</a>
 
             <a href="../vistas/motivos.php" class="list-group-item list-group-item-action list-group-item-success">Motivos</a>
 
@@ -15,4 +18,5 @@
             <a href="../vistas/usuariosmetro.php" class="list-group-item list-group-item-action list-group-item-success">Usuarios Atendidos</a>
 
             <a href="#" class="list-group-item list-group-item-action list-group-item-success">Sistema</a>
+ 
   </div>
